@@ -13,7 +13,7 @@ $ yarn
 
 ```bash
 $ yarn start
-
+```
 
 
 <p align="center">
