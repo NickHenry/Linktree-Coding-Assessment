@@ -1,3 +1,21 @@
+
+## Description
+This is an API built to be a set of CRUD endpoints for Links and their various types.
+This has been built using the [Nest](https://github.com/nestjs/nest) TypeScript framework.
+
+## Installation
+
+```bash
+$ yarn
+```
+
+## Running the app
+
+```bash
+$ yarn start
+
+
+
 <p align="center">
   <img src="./ui.png">
 </p>
