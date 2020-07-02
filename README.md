@@ -15,12 +15,12 @@ $ yarn
 $ yarn start
 ```
 
+# The Challenge
 
 <p align="center">
   <img src="./ui.png">
 </p>
 
-# The Problem
 We have three new link types for our users.
 
 1. Classic
