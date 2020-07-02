@@ -1,5 +1,5 @@
 
-## Description
+# Description
 This is an API built to be a set of CRUD endpoints for Links and their various types.
 This has been built using the [Nest](https://github.com/nestjs/nest) TypeScript framework.
 
@@ -14,9 +14,8 @@ $ yarn
 ```bash
 $ yarn start
 ```
-# The Database
-
-	- You can find the database diagram [here](https://dbdiagram.io/d/5efdae1b0425da461f0427e0)
+## The Database
+	You can find the database diagram [here](https://dbdiagram.io/d/5efdae1b0425da461f0427e0)
 
 # The Challenge
 
