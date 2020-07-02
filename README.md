@@ -14,6 +14,9 @@ $ yarn
 ```bash
 $ yarn start
 ```
+# The Database
+
+	- You can find the database diagram [here](https://dbdiagram.io/d/5efdae1b0425da461f0427e0)
 
 # The Challenge
 
