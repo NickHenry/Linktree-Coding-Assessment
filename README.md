@@ -5,6 +5,8 @@ This has been built using the [Nest](https://github.com/nestjs/nest) TypeScript 
 
 ## Installation
 
+Follow the instructions [here](https://classic.yarnpkg.com/en/docs/install/) on how to install the Yarn package manager.
+
 ```bash
 $ yarn
 ```
@@ -13,6 +15,11 @@ $ yarn
 
 ```bash
 $ yarn start
+```
+## Running the tests
+
+```bash
+$ yarn test
 ```
 
 ## The Database
