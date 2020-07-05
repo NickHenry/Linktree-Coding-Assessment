@@ -1,9 +1,31 @@
+
+import { IsString, IsNumber, IsUrl, IsBoolean, IsOptional } from 'class-validator';
+
+
 export default class Show {
-  id: number;
+  @IsOptional() 
+  id?: number;
+
+  @IsNumber()
   date: number;
-  soldout: boolean;
-  saleDate: Date;
+
+  @IsOptional()
+  @IsBoolean()
+  soldout?: boolean;
+
+  @IsNumber()
+  saleDate: number;
+  
+  @IsString()
   venueName: string;
+
+  @IsString()
   venueCity: string;
+  
+  @IsUrl()
   externalLink: string;
+
+  constructor(data: Show) {
+    Object.assign(this, data);
+  }
 }

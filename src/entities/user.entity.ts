@@ -1,11 +1,9 @@
-
 export default class User {
   id: number;
   name: string;
   profileImage: string;
+  active: boolean;
   constructor(data: User) {
-    this.id = data.id;
-    this.name = data.name;
-    this.profileImage = data.profileImage;
+    Object.assign(this, data);
   }
 }
