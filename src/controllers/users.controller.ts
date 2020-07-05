@@ -9,39 +9,7 @@ import MusicSource from '../entities/music-source.entity';
 
 @Controller('users')
 export class UsersController {
-
   constructor(private userRepository: UserRepository, private linkRepository: LinkRepository) {}
-  @Get()
-  searchAllUsers(): string {
-    // TODO: Add param reading
-    // Add param validation
-    // Add call to repository
-
-    return "";
-  }
-
-  @Post()
-  createUser(@Body() inputUser: User): string {
-    // TODO: Validate user input
-    // send to repository to be added to the database
-    return JSON.stringify(inputUser);
-  }
-
-  @Put()
-  updateUser(@Param('id', ParseIntPipe) id: string, @Body() inputUser: User): string {
-    // TODO: Validate ID input
-    // Validate request body inputs
-    // send body to repository to update database
-    return JSON.stringify({id, inputUser});
-  }
-
-  @Get('/:id')
-  getUserById(@Param('id', ParseIntPipe) id: string): string {
-    // TODO: validate id as good value
-    // call repository to get user by id
-    // if no user is found, handle 404
-    return JSON.stringify(id);
-  }
 
   @Get('/:id/links')
   searchLinksForUser( 
@@ -91,6 +59,38 @@ export class UsersController {
     return linkObj
   }
 
+
+  @Get()
+  searchAllUsers(): string {
+    // TODO: Add param reading
+    // Add param validation
+    // Add call to repository
+
+    return "";
+  }
+
+  @Post()
+  createUser(@Body() inputUser: User): string {
+    // TODO: Validate user input
+    // send to repository to be added to the database
+    return JSON.stringify(inputUser);
+  }
+
+  @Put()
+  updateUser(@Param('id', ParseIntPipe) id: string, @Body() inputUser: User): string {
+    // TODO: Validate ID input
+    // Validate request body inputs
+    // send body to repository to update database
+    return JSON.stringify({id, inputUser});
+  }
+
+  @Get('/:id')
+  getUserById(@Param('id', ParseIntPipe) id: string): string {
+    // TODO: validate id as good value
+    // call repository to get user by id
+    // if no user is found, handle 404
+    return JSON.stringify(id);
+  }
 
   @Put('/:id/links/:linkId')
   updateLinkForUser(@Param('id', ParseIntPipe) id: string,  @Param('linkId') linkId: string, @Body() link: Link): string { 

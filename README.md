@@ -16,6 +16,12 @@ $ yarn
 ```bash
 $ yarn start
 ```
+
+### API Docs
+When running, have a look at `http://localhost:3000/api` for basic generated API docs based on the endpoints.
+TODO: Update entities to include the API docs decorators to generate more detailed API docs.
+
+
 ## Running the tests
 
 ```bash
@@ -24,8 +30,6 @@ $ yarn test
 
 ## The Database
 You can find the database diagram [here](https://dbdiagram.io/d/5efdae1b0425da461f0427e0)
-
-
 
 ---
 # The Challenge
