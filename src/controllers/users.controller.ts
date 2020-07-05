@@ -52,7 +52,7 @@ export class UsersController {
       throw new NotFoundException('User not found');
     }
 
-    // TODO: add sort 
+    // TODO: add sort by createdAt
     return this.linkRepository.searchLinks({ userId });
   }
 

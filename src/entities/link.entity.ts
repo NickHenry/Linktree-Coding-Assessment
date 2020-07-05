@@ -28,6 +28,9 @@ export default class Link {
   @IsOptional() 
   active?: boolean;
 
+  @IsOptional()
+  createdAt?: number;
+
   @ValidateIf(o => o.type === supportedLinkTypes.CLASSIC)
   @IsUrl()
   url?: string;
